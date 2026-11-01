@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>جشن تولد بانو فاطیما</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app" class="app">
+  <section id="scene" class="scene opening">
+    <div id="stars" class="stars"></div>
+    <div id="guide" class="character guide hidden"><img src="assets/cutouts/guide.png" alt="گربه راهنما"></div>
+    <div id="bubble" class="bubble hidden"></div>
+    <div id="hint" class="hint hidden"></div>
+    <div id="door" class="door hidden" role="button" tabindex="0" aria-label="باز کردن در">
+      <div class="door-label">در بزنید / برای باز کردن کلیک کنید</div>
+      <div class="door-frame"><div class="door-panel"><span class="knob"></span><span class="knock">تق! تق!</span></div></div>
+    </div>
+    <div id="party" class="party hidden">
+      <div class="speaker-stack"><div class="speaker"></div><div class="speaker"></div><div class="speaker"></div></div>
+      <div id="djGroup" class="dj-group">
+        <div class="dj"><img src="assets/cutouts/dj-1.png" alt="دیجی نوازنده کیبورد"></div>
+        <div class="dj singer"><img src="assets/cutouts/dj-2.png" alt="خواننده"></div>
+        <div class="dj"><img src="assets/cutouts/dj-3.png" alt="گیتاریست"></div>
+      </div>
+      <div id="guests" class="guests"></div>
+      <div id="villain" class="character villain hidden"><img src="assets/cutouts/villain.png" alt="گربه شرور"></div>
+      <div id="splinter" class="character splinter hidden"><img src="assets/cutouts/splinter.png" alt="استاد اسپلینتر"></div>
+      <div id="cake" class="cake hidden"><div class="candles"><i></i><i></i><i></i><i></i><i></i></div><div class="tier tier3"></div><div class="tier tier2"></div><div class="tier tier1"></div><div class="cake-plate"></div></div>
+    </div>
+    <div id="musicControl" class="music-control hidden">
+      <label for="songSelect">انتخاب آهنگ جشن:</label>
+      <select id="songSelect">
+        <option value="">— انتخاب آهنگ —</option>
+        <option value="assets/song-persian.mp3">فارسی</option>
+        <option value="assets/song-persian-arabic.mp3">فارسی عربی</option>
+        <option value="assets/song-andy.mp3">اندی</option>
+      </select>
+      <audio id="music" preload="auto" loop></audio>
+    </div>
+    <div id="phone" class="phone hidden">
+      <div class="phone-speaker"></div><div class="phone-screen" id="phoneScreen"></div><div class="phone-home"></div>
+    </div>
+    <div id="fullscreenVideo" class="fullscreen-video hidden"><video id="mainVideo" playsinline></video><button id="skipVideo" class="skip">ادامه</button></div>
+    <div id="letterModal" class="letter-modal hidden">
+      <div class="letter">
+        <div class="letter-title">نامه‌ی آرزو</div>
+        <textarea id="wishText" placeholder="آرزوی قشنگت رو اینجا بنویس..."></textarea>
+        <button id="sendWish">ثبت و ارسال آرزو</button>
+      </div>
+    </div>
+    <button id="restart" class="restart hidden">شروع دوباره</button>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
